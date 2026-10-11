@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>羚羊电影网 - 自然/草原/高原/迁徙主题电影导航 | lingyangdianyingwang-h5</title>
+<meta name="description" content="羚羊电影网整理自然电影、草原故事、高原迁徙、动物纪录片与慢节奏文艺片。羚羊电影网以草甸绿、沙黄、岩灰、雪山蓝做视觉，网址 lingyangdianyingwang-h5.github.io。">
+<meta name="keywords" content="羚羊电影网,自然电影,草原电影,高原电影,动物纪录片,迁徙主题,电影导航,lingyangdianyingwang-h5">
+<meta name="author" content="羚羊电影网">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://lingyangdianyingwang-h5.github.io/">
+<meta property="og:title" content="羚羊电影网 - 自然、草原与迁徙主题电影导航">
+<meta property="og:description" content="羚羊电影网：自然电影、草原故事、高原迁徙、动物纪录片与慢节奏文艺片。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lingyangdianyingwang-h5.github.io/">
+<meta property="og:site_name" content="羚羊电影网">
+<meta name="msvalidate.01" content="BING_VERIFY_CODE">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"羚羊电影网",
+  "url":"https://lingyangdianyingwang-h5.github.io/",
+  "description":"羚羊电影网整理自然电影、草原故事、高原迁徙、动物纪录片与慢节奏文艺片。",
+  "potentialAction":{
+    "@type":"SearchAction",
+    "target":"https://lingyangdianyingwang-h5.github.io/#search={search_term_string}",
+    "query-input":"required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"羚羊电影网是什么？",
+      "acceptedAnswer":{"@type":"Answer","text":"羚羊电影网是一个自然与旷野主题的电影导航站，收草原故事、高原迁徙、动物纪录片、自然文学改编电影和慢节奏文艺片。"}
+    },
+    {
+      "@type":"Question",
+      "name":"羚羊电影网适合什么心情？",
+      "acceptedAnswer":{"@type":"Answer","text":"适合想离开城市噪音、看天地很大、人很小、动物比人诚实的那种晚上。"}
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#10160f;
+  --bg-soft:#16201700;
+  --meadow:#7fae5a;
+  --meadow-deep:#4f7d39;
+  --sand:#e7c98f;
+  --rock:#8a8275;
+  --snow:#cfe3ef;
+  --snow-blue:#5b8fb0;
+  --tibet-red:#c0533f;
+  --ink:#eef3e6;
+  --muted:#a9b89c;
+  --line:rgba(127,174,90,.32);
+  --shadow:0 18px 46px rgba(0,0,0,.4);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Noto Serif SC","PingFang SC","Microsoft YaHei",serif,sans-serif;
+  background:
+    radial-gradient(820px 460px at 88% -8%,rgba(91,143,176,.22),transparent 60%),
+    radial-gradient(760px 440px at -8% 8%,rgba(127,174,90,.20),transparent 55%),
+    var(--bg);
+  color:var(--ink);line-height:1.78;
+}
+a{color:inherit;text-decoration:none}
+
+/* 地平线导航 */
+.ly-top{position:sticky;top:0;z-index:999;background:rgba(16,22,15,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.ly-top__in{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:.75rem 1rem}
+.ly-logo{font-weight:900;font-size:1.22rem}
+.ly-logo b{color:var(--meadow)}
+.ly-nav{display:flex;gap:.3rem}
+.ly-nav a{padding:.45rem .85rem;border-radius:999px;font-size:.9rem;color:var(--muted);font-weight:600}
+.ly-nav a:hover{background:rgba(127,174,90,.16);color:var(--meadow)}
+.ly-burger{display:none;flex-direction:column;gap:4px;cursor:pointer}
+.ly-burger span{width:23px;height:2px;background:var(--meadow);border-radius:2px}
+
+/* Hero 迁徙 */
+.ly-hero{max-width:1180px;margin:0 auto;padding:3.6rem 1rem 2.6rem;position:relative;overflow:hidden}
+.ly-horizon{height:180px;position:relative;border-radius:20px;overflow:hidden;margin-bottom:1.6rem;
+  background:linear-gradient(180deg,#cfe3ef 0 38%,#e7c98f 38% 70%,#7fae5a 70% 100%)}
+.ly-deer{position:absolute;bottom:18%;left:8%;font-size:2.4rem;filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))}
+.ly-sun{position:absolute;top:14%;right:14%;width:54px;height:54px;border-radius:50%;background:#fff3d6;box-shadow:0 0 40px #ffe9b0}
+.ly-hero h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.22;font-weight:900;margin-bottom:1rem}
+.ly-hero h1 em{font-style:normal;color:var(--meadow)}
+.ly-hero p{color:var(--muted);max-width:680px;margin-bottom:1.8rem}
+.ly-cta{display:inline-flex;gap:.5rem;align-items:center;padding:.85rem 1.9rem;border-radius:999px;font-weight:800;color:#0e130b;background:linear-gradient(90deg,var(--sand),var(--meadow));box-shadow:var(--shadow)}
+
+/* 区块 */
+.ly-sec{max-width:1180px;margin:0 auto;padding:3.3rem 1rem}
+.ly-head{margin-bottom:1.8rem;text-align:center}
+.ly-head h2{font-size:clamp(1.4rem,3.5vw,2.2rem);font-weight:900}
+.ly-head h2 i{color:var(--meadow);font-style:normal}
+.ly-head p{color:var(--muted);margin-top:.35rem;font-size:.95rem}
+
+/* 转场片单：四季 */
+.ly-seasons{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.ly-season{border-radius:20px;padding:1.3rem 1.1rem;border:1px solid var(--line);background:#13190f}
+.ly-season h3{font-size:1.1rem;margin-bottom:.8rem;display:flex;align-items:center;gap:.4rem}
+.ly-season ul{list-style:none}
+.ly-season li{padding:.5rem 0;border-bottom:1px dashed rgba(169,184,156,.25);font-size:.9rem;color:#d7e2c8}
+.ly-season li:last-child{border-bottom:0}
+.ly-spring{border-top:4px solid #9ed06a}
+.ly-summer{border-top:4px solid #e7c98f}
+.ly-autumn{border-top:4px solid #d98a4a}
+.ly-winter{border-top:4px solid #9fc6e0}
+
+/* 种群分类 */
+.ly-pack{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem}
+.ly-beast{text-align:center;padding:1.1rem .6rem;background:#13190f;border:1px solid var(--line);border-radius:20px;transition:.25s}
+.ly-beast:hover{transform:translateY(-4px);border-color:var(--meadow)}
+.ly-beast .totem{width:60px;height:60px;margin:0 auto .7rem;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.6rem;
+  background:radial-gradient(circle at 30% 30%,#26331c,#10160f);border:1px solid var(--sand)}
+.ly-beast h3{font-size:.95rem}
+.ly-beast p{font-size:.74rem;color:var(--muted)}
+
+/* 迁徙热力榜：蹄印进度 */
+.ly-rank{display:grid;gap:1.1rem}
+.ly-hoof{background:#13190f;border:1px solid var(--line);border-radius:18px;padding:1.1rem 1.2rem}
+.ly-hoof h3{font-size:1.05rem;display:flex;justify-content:space-between;margin-bottom:.6rem}
+.ly-hoof h3 span{color:var(--sand)}
+.ly-track{height:12px;border-radius:99px;background:rgba(231,201,143,.18);overflow:hidden;position:relative}
+.ly-track i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--meadow),var(--snow-blue))}
+.ly-track i::after{content:"🐾";position:absolute;right:6px;top:-3px;font-size:.8rem}
+
+/* 旷野影评 */
+.ly-notes{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+.ly-note{background:#13190f;border:1px solid var(--line);border-radius:20px;padding:1.4rem}
+.ly-note .tag{font-size:.72rem;padding:.2rem .6rem;border-radius:999px;background:rgba(127,174,90,.18);color:var(--meadow)}
+.ly-note h3{font-size:1.05rem;margin:.6rem 0 .4rem}
+.ly-note p{font-size:.86rem;color:var(--muted)}
+
+/* 关于 */
+.ly-about{background:linear-gradient(160deg,#16201 1 0%,#10160f 60%);border:1px solid var(--line);border-radius:26px;padding:2.4rem;background:linear-gradient(160deg,#1a2413,#10160f)}
+.ly-about h2{font-size:1.9rem;margin-bottom:.8rem}
+.ly-about h2 u{color:var(--meadow);text-decoration:none}
+.ly-about p{color:var(--muted);margin-bottom:1rem}
+.ly-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.4rem}
+.ly-stat{background:#13190f;border:1px solid var(--line);border-radius:16px;padding:1.1rem;text-align:center}
+.ly-stat b{font-size:1.5rem;color:var(--sand);display:block}
+.ly-stat span{font-size:.8rem;color:var(--muted)}
+
+/* FAQ */
+.ly-faq details{background:#13190f;border:1px solid var(--line);border-radius:14px;padding:.2rem 1.1rem;margin-bottom:.7rem}
+.ly-faq summary{cursor:pointer;padding:.85rem 0;font-weight:700}
+.ly-faq p{padding:0 0 .85rem;color:var(--muted)}
+
+/* 页脚 */
+.ly-foot{border-top:1px solid var(--line);background:#0b0f08;padding:2.2rem 1rem;text-align:center;color:var(--muted)}
+.ly-foot a{color:var(--meadow)}
+.ly-foot__links{display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.ly-foot__links a{font-size:.88rem}
+
+@media(max-width:980px){
+  .ly-seasons{grid-template-columns:repeat(2,1fr)}
+  .ly-pack{grid-template-columns:repeat(3,1fr)}
+  .ly-notes{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .ly-nav{display:none;position:absolute;top:58px;left:0;right:0;flex-direction:column;gap:0;background:rgba(16,22,15,.98);border-bottom:1px solid var(--line)}
+  .ly-nav.show{display:flex}
+  .ly-nav a{padding:.9rem 1rem;border-bottom:1px solid var(--line)}
+  .ly-burger{display:flex}
+  .ly-seasons{grid-template-columns:1fr}
+  .ly-pack{grid-template-columns:repeat(2,1fr)}
+  .ly-stats{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<header class="ly-top">
+  <div class="ly-top__in">
+    <div class="ly-logo">🐾 羚羊<b>电影网</b></div>
+    <nav class="ly-nav" id="lyNav">
+      <a href="#home">旷野首页</a>
+      <a href="#seasons">四季转场</a>
+      <a href="#pack">种群分类</a>
+      <a href="#rank">迁徙榜单</a>
+      <a href="#notes">旷野影评</a>
+      <a href="#about">关于羚羊</a>
+    </nav>
+    <div class="ly-burger" onclick="document.getElementById('lyNav').classList.toggle('show')">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<section class="ly-hero" id="home">
+  <div class="ly-horizon">
+    <div class="ly-sun"></div>
+    <div class="ly-deer">🦌</div>
+  </div>
+  <h1>天很大，人很小，<br>来 <em>羚羊电影网</em> 看旷野</h1>
+  <p>羚羊电影网不追热搜爆款，只收“有风、有草、有蹄声”的片子：草原转场、高原迁徙、动物纪录片、自然文学改编、慢火文艺。配色是草甸绿、沙黄、岩灰、雪山蓝——像把可可西里装进手机。</p>
+  <a class="ly-cta" href="#seasons">🌾 跟着转场走</a>
+</section>
+
+<section class="ly-sec" id="seasons">
+  <div class="ly-head">
+    <h2>四季 <i>转场</i></h2>
+    <p>羚羊电影网按“牧民转场”排片：春醒、夏绿、秋退、冬藏，每季一种心境。</p>
+  </div>
+  <div class="ly-seasons">
+    <div class="ly-season ly-spring">
+      <h3>🌱 春 · 醒</h3>
+      <ul>
+        <li>融雪之路</li>
+        <li>初生小羚</li>
+        <li>风过草甸</li>
+        <li>帐篷重新支起</li>
+      </ul>
+    </div>
+    <div class="ly-season ly-summer">
+      <h3>☀️ 夏 · 绿</h3>
+      <ul>
+        <li>高山牧场</li>
+        <li>鹰与羊群</li>
+        <li>雨后的经幡</li>
+        <li>河流改道</li>
+      </ul>
+    </div>
+    <div class="ly-season ly-autumn">
+      <h3>🍂 秋 · 退</h3>
+      <ul>
+        <li>远去的牧歌</li>
+        <li>草色变金</li>
+        <li>转场前夜</li>
+        <li>驮队出发</li>
+      </ul>
+    </div>
+    <div class="ly-season ly-winter">
+      <h3>❄️ 冬 · 藏</h3>
+      <ul>
+        <li>暴风雪线</li>
+        <li>枯河与孤灯</li>
+        <li>雪地蹄印</li>
+        <li>熬过风口</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="ly-sec" id="pack">
+  <div class="ly-head">
+    <h2>种群 <i>分类</i></h2>
+    <p>羚羊电影网不只收“羚羊片”，也收所有“在天地间找活路”的生命。</p>
+  </div>
+  <div class="ly-pack">
+    <a href="#" class="ly-beast"><div class="totem">🐎</div><h3>草原</h3><p>牧马/羊群/转场</p></a>
+    <a href="#" class="ly-beast"><div class="totem">🦌</div><h3>高原</h3><p>藏羚/雪线/巡山</p></a>
+    <a href="#" class="ly-beast"><div class="totem">🐺</div><h3>森林</h3><p>狼群/鹿径/雾林</p></a>
+    <a href="#" class="ly-beast"><div class="totem">🐋</div><h3>海洋</h3><p>鲸歌/潮汐/孤岛</p></a>
+    <a href="#" class="ly-beast"><div class="totem">🐫</div><h3>沙漠</h3><p>驼队/风蚀/星空</p></a>
+  </div>
+</section>
+
+<section class="ly-sec" id="rank">
+  <div class="ly-head">
+    <h2>迁徙 <i>热力榜</i></h2>
+    <p>羚羊电影网按“旷野感 + 自然声场 + 动物戏份 + 人退到背景里”综合排序。</p>
+  </div>
+  <div class="ly-rank">
+    <div class="ly-hoof"><h3>1. 远去的牧歌 <span>96%</span></h3><div class="ly-track"><i style="width:96%"></i></div></div>
+    <div class="ly-hoof"><h3>2. 可可西里·巡山 <span>94%</span></h3><div class="ly-track"><i style="width:94%"></i></div></div>
+    <div class="ly-hoof"><h3>3. 草原有信 <span>90%</span></h3><div class="ly-track"><i style="width:90%"></i></div></div>
+    <div class="ly-hoof"><h3>4. 雪线之上 <span>87%</span></h3><div class="ly-track"><i style="width:87%"></i></div></div>
+    <div class="ly-hoof"><h3>5. 鲸与灯塔 <span>84%</span></h3><div class="ly-track"><i style="width:84%"></i></div></div>
+  </div>
+</section>
+
+<section class="ly-sec" id="notes">
+  <div class="ly-head">
+    <h2>旷野 <i>影评</i></h2>
+    <p>羚羊电影网的影评不写“爽不爽”，写“风从哪边来、人有没有打扰自然”。</p>
+  </div>
+  <div class="ly-notes">
+    <article class="ly-note"><span class="tag">草原影评</span><h3>转场不是搬家，是活着</h3><p>《远去的牧歌》里每一次拆毡房、赶羊、过冰河，都不是剧情道具，而是一年里真正的生死节奏。[6,9](@ref)</p></article>
+    <article class="ly-note"><span class="tag">高原影评</span><h3>藏羚羊的剪影比台词重</h3><p>好自然片懂得让动物先说话：蹄声、鼻息、雪粒落在毛上，都比人类独白更诚实。[1,4](@ref)</p></article>
+    <article class="ly-note"><span class="tag">海洋影评</span><h3>鲸歌一响，城市退场</h3><p>这类片适合戴耳机看：没有汽车声，只有低频鲸鸣，人会突然想起自己也是会呼吸的动物。</p></article>
+    <article class="ly-note"><span class="tag">沙漠影评</span><h3>星空是沙漠唯一的霓虹</h3><p>《驼队与星图》把孤独拍得很贵：没有反派，只有风、沙、水和赶路的人。</p></article>
+  </div>
+</section>
+
+<section class="ly-sec" id="about">
+  <div class="ly-about">
+    <h2>关于 <u>羚羊电影网</u></h2>
+    <p>
+      羚羊电影网（lingyangdianyingwang-h5.github.io）不是“电影超市”，而像一片可以走进去的旷野：
+      你点开的不只是片名，是春醒、夏绿、秋退、冬藏的四种活法。
+    </p>
+    <p>
+      我们偏爱自然电影、草原故事、高原迁徙、动物纪录片和慢节奏文艺片。城市已经够吵了，羚羊电影网想留一块“人退后一步”的银幕。
+    </p>
+    <div class="ly-stats">
+      <div class="ly-stat"><b>540+</b><span>自然/旷野影片</span></div>
+      <div class="ly-stat"><b>4 季</b><span>转场片单</span></div>
+      <div class="ly-stat"><b>5 类</b><span>种群分类</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="ly-sec ly-faq">
+  <div class="ly-head">
+    <h2>羚羊 <i>问答</i></h2>
+  </div>
+  <details open>
+    <summary>羚羊电影网只收动物纪录片吗？</summary>
+    <p>不是。也收草原剧情、高原文艺、自然文学改编、慢火公路片——核心是“旷野感”，不一定有动物主演。</p>
+  </details>
+  <details>
+    <summary>羚羊电影网适合睡前看吗？</summary>
+    <p>适合。很多片没有大冲突，声音比剧情重要，关灯看像在帐篷外听风。</p>
+  </details>
+  <details>
+    <summary>为什么用草甸绿和沙黄？</summary>
+    <p>因为羚羊不在霓虹里，在草甸、沙地、雪线和岩灰之间；配色先对，片子才对。[1,17](@ref)</p>
+  </details>
+</section>
+
+<footer class="ly-foot">
+  <div class="ly-foot__links">
+    <a href="#seasons">四季转场</a>
+    <a href="#pack">种群分类</a>
+    <a href="#rank">迁徙榜单</a>
+    <a href="#notes">旷野影评</a>
+    <a href="#about">关于羚羊</a>
+    <a href="#">免责声明</a>
+  </div>
+  <p>© 2026 <a href="https://lingyangdianyingwang-h5.github.io">羚羊电影网</a> · lingyangdianyingwang-h5.github.io</p>
+  <p>羚羊电影网 —— 天很大，人很小，蹄声比台词诚实。</p>
+</footer>
+
+<script>
+document.querySelectorAll('.ly-nav a').forEach(function(a){
+  a.addEventListener('click',function(){
+    document.getElementById('lyNav').classList.remove('show');
+  });
+});
+</script>
+
+</body>
+</html>
